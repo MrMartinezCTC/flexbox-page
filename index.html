@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        #extra-credit-container {
+            flex-wrap: wrap;
+        }
+        #extra-credit-container .flex-item {
+            max-width: unset;
+            flex: 1;
+            margin: auto;
+            border: solid 1px rgb(203, 247, 237);
+        }
+        #extra-credit-container .flex-item:hover{
+            transition: 0.2s;
+            flex:2;
+            color: rgb(203, 247, 237);
+            background-color: rgb(38, 48, 87);;
+        }
+    </style>
     <title>Flex Box</title>
 </head>
 
@@ -62,7 +79,6 @@
                 </article>
                 <hr>
             </div>
-
 
             <!-- Flex wrap -->
             <div>
@@ -245,39 +261,51 @@
                 <hr>
             </div>
 
-            <!-- flex-grow -->
+            <!-- flex-basis -->
             <div>
-                <h2>flex-grow:</h2>
-                <article id="flex-grow-container">
+                <h2>flex-basis:</h2>
+                <article id="flex-basis-container">
                     <div>
-                        <h3>Specifies how much a flex item will grow relative to the rest of the flex items</h3>
-                        <div id="flex-grow-example" class="flex-items-container">
-                            <div class="flex-item" style="flex-grow:3;">1</div>
-                            <div class="flex-item">2</div>
-                            <div class="flex-item" style="flex-grow: 8;">3</div>
-                            <div class="flex-item">4</div>
+                        <h3>flex-basis</h3>
+                        <div id="flex-basis-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item" style="flex-basis: 500px;">2</div>
+                            <div class="flex-item">3</div>
                         </div>
                     </div>
                 </article>
                 <hr>
             </div>
 
-            
-            <!-- flex-shrink -->
+            <!-- align-self -->
             <div>
-                <h2>flex-shrink:</h2>
-                <h2>Try resizing the screen to see what happens to flex-item 3</h2>
-                <article id="flex-shrink-container">
+                <h2>align-self:</h2>
+                <article id="flex-align-self-container">
                     <div>
-                        <h3>flex-shrink</h3>
-                        <div id="flex-shrink-example" class="flex-items-container">
+                        <h3>align-self</h3>
+                        <div id="align-self-example" class="flex-items-container">
+                            <div class="flex-item" style="align-self: center;">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <!-- align-self -->
+            <div>
+                <h2>Extra Credit:</h2>
+                <article id="flex-align-self-container">
+                    <div>
+                        <h3>Can you use a pseudo-class and flex properties to recreate this action?</h3>
+
+                        <div id="extra-credit-container" class="flex-items-container">
                             <div class="flex-item">1</div>
                             <div class="flex-item">2</div>
-                            <div class="flex-item" style="flex-shrink: 0;">3</div>
-                            <div class="flex-item">4</div>
-                            <div class="flex-item">5</div>
-                            <div class="flex-item">6</div>
-                            <div class="flex-item">7</div>
+                            <div class="flex-item">3</div>
                         </div>
                     </div>
                 </article>
