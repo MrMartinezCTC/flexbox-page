@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Flex Box</title>
+</head>
+
+<body>
+
+    <main>
+        <!-- Container props -->
+        <section>
+            <!-- Container/Items -->
+            <div>
+                <h1>Flex-box</h1>
+                <article id="flex-container-items">
+                    <div class="flex-box-explain" id="flex-box-container">
+                        <h2>Flex Container</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <div class="flex-box-explain" id="flex-box-item">
+                        <h2>Flex Items</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+            <!-- Flex direction -->
+            <div>
+                <h1>Flex Container Properties</h1>
+                <h2>flex-direction:</h2>
+                <article id="flex-direction-container">
+                    <div>
+                        <h3>flex-direction: row (default)</h3>
+                        <div id="flex-direction-row-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>flex-direction: column</h3>
+                        <div id="flex-direction-column-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+
+            <!-- Flex wrap -->
+            <div>
+                <h2>flex-wrap:</h2>
+                <h2>Try resizing the screen to see what happens to these flex-items</h2>
+                <article id="flex-wrap-container">
+                    <div>
+                        <h3>flex-wrap: wrap</h3>
+                        <div id="flex-wrap-wrap-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                            <div class="flex-item">4</div>
+                            <div class="flex-item">5</div>
+                            <div class="flex-item">6</div>
+                            <div class="flex-item">7</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>flex-wrap: no-wrap</h3>
+                        <div id="flex-wrap-nowrap-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                            <div class="flex-item">4</div>
+                            <div class="flex-item">5</div>
+                            <div class="flex-item">6</div>
+                            <div class="flex-item">7</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>flex-wrap: wrap-reverse</h3>
+                        <div id="flex-wrap-reverse-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                            <div class="flex-item">4</div>
+                            <div class="flex-item">5</div>
+                            <div class="flex-item">6</div>
+                            <div class="flex-item">7</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+            <!-- justify-content -->
+            <div>
+                <h1>justify-content</h1>
+                <article id="justify-content-container">
+                    <!-- center -->
+                    <div id="justify-center">
+                        <h2>center</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- flex-start -->
+                    <div id="flex-start">
+                        <h2>flex-start</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div id="flex-end">
+                        <h2>flex-end</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- space around -->
+                    <div id="space-around">
+                        <h2>space-around</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- space between -->
+                    <div id="space-between">
+                        <h2>space-between</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+            <!-- align-items -->
+            <div>
+                <h1>align-items</h1>
+                <article id="align-items-container">
+                    <!-- center -->
+                    <div id="align-center">
+                        <h2>center</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- flex-start -->
+                    <div id="align-flex-start">
+                        <h2>flex-start</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div id="align-flex-end">
+                        <h2>flex-end</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                    <!-- stretch -->
+                    <div id="align-stretch">
+                        <h2>stretch (default)</h2>
+                        <div class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+        </section>
+
+        <!-- Item props -->
+        <section>
+            <!-- order -->
+            <div>
+                <h1>Flex Item Properties</h1>
+                <h2>order:</h2>
+                <article id="flex-order-container">
+                    <div>
+                        <h3>You can change the order of flex items with the order property</h3>
+                        <div id="flex-order-example" class="flex-items-container">
+                            <div class="flex-item" style="order:4;">1</div>
+                            <div class="flex-item" style="order:2;">2</div>
+                            <div class="flex-item" style="order:3;">3</div>
+                            <div class="flex-item" style="order:1;">4</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+            <!-- flex-grow -->
+            <div>
+                <h2>flex-grow:</h2>
+                <article id="flex-grow-container">
+                    <div>
+                        <h3>Specifies how much a flex item will grow relative to the rest of the flex items</h3>
+                        <div id="flex-grow-example" class="flex-items-container">
+                            <div class="flex-item" style="flex-grow:3;">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item" style="flex-grow: 8;">3</div>
+                            <div class="flex-item">4</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+            <!-- flex-grow -->
+            <div>
+                <h2>flex-grow:</h2>
+                <article id="flex-grow-container">
+                    <div>
+                        <h3>Specifies how much a flex item will grow relative to the rest of the flex items</h3>
+                        <div id="flex-grow-example" class="flex-items-container">
+                            <div class="flex-item" style="flex-grow:3;">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item" style="flex-grow: 8;">3</div>
+                            <div class="flex-item">4</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+
+            
+            <!-- flex-shrink -->
+            <div>
+                <h2>flex-shrink:</h2>
+                <h2>Try resizing the screen to see what happens to flex-item 3</h2>
+                <article id="flex-shrink-container">
+                    <div>
+                        <h3>flex-shrink</h3>
+                        <div id="flex-shrink-example" class="flex-items-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item" style="flex-shrink: 0;">3</div>
+                            <div class="flex-item">4</div>
+                            <div class="flex-item">5</div>
+                            <div class="flex-item">6</div>
+                            <div class="flex-item">7</div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
